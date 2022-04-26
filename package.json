@@ -1,0 +1,20 @@
+{
+	"name": "complete-devops-flow-hands-on-project",
+	"version": "1.0.0",
+	"description": "A practice project to understand the complete devOps workflow where I have used docker for creating a platform independant code base and jenkins for CI/CD automation.",
+	"main": "index.js",
+	"scripts": {},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/rhtsid18-dev/complete-devops-flow-hands-on-project.git"
+	},
+	"author": "Rohit Sidhwani",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/rhtsid18-dev/complete-devops-flow-hands-on-project/issues"
+	},
+	"homepage": "https://github.com/rhtsid18-dev/complete-devops-flow-hands-on-project#readme",
+	"devDependencies": {
+		"prettier": "2.6.2"
+	}
+}
