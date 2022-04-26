@@ -5,8 +5,8 @@ services:
         ports:
             - 27017:27017
         environment:
-            - MONGO_INITDB_ROOT_USERNAME=admin
-            - MONGO_INITDB_ROOT_PASSWORD=password
+            - MONGO_INITDB_ROOT_USERNAME=${MONGODB_USERNAME}
+            - MONGO_INITDB_ROOT_PASSWORD=${MONGODB_PASSWORD}
         volumes:
             - ./mongoDbData:/data/db
     mongo-express:
@@ -17,6 +17,6 @@ services:
             - 'mongodb'
         restart: always
         environment:
-            - ME_CONFIG_MONGODB_ADMINUSERNAME=admin
-            - ME_CONFIG_MONGODB_ADMINPASSWORD=password
+            - ME_CONFIG_MONGODB_ADMINUSERNAME=${MONGODB_USERNAME}
+            - ME_CONFIG_MONGODB_ADMINPASSWORD=${MONGODB_PASSWORD}
             - ME_CONFIG_MONGODB_SERVER=mongodb
