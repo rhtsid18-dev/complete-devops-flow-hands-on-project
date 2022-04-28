@@ -1,4 +1,5 @@
 {
+	"arrowParens": "always",
 	"proseWrap": "never",
 	"tabWidth": 4,
 	"useTabs": true,

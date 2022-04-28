@@ -16,5 +16,8 @@
 	"homepage": "https://github.com/rhtsid18-dev/complete-devops-flow-hands-on-project#readme",
 	"devDependencies": {
 		"prettier": "2.6.2"
+	},
+	"dependencies": {
+		"express": "4.18.0"
 	}
 }
