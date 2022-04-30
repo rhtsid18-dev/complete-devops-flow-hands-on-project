@@ -1,6 +1,6 @@
 FROM node:16.15-alpine
 
-ENV PORT=3000
+ENV PORT=80
 
 RUN mkdir -p /home/app
 
