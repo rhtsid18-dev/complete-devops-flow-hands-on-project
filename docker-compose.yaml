@@ -8,19 +8,21 @@ services:
             - MONGO_INITDB_ROOT_USERNAME=${MONGODB_USERNAME}
             - MONGO_INITDB_ROOT_PASSWORD=${MONGODB_PASSWORD}
         volumes:
-            - ./mongoDbData:/data/db
+            - mongoDbData:/data/db
     mongo-express:
         image: mongo-express
         ports:
             - 8080:8081
         depends_on:
-            - 'mongodb'
-        restart: unless-stopped
+            - mongodb
+        restart: always
         environment:
             - ME_CONFIG_MONGODB_ADMINUSERNAME=${MONGODB_USERNAME}
             - ME_CONFIG_MONGODB_ADMINPASSWORD=${MONGODB_PASSWORD}
             - ME_CONFIG_MONGODB_SERVER=mongodb
     complete-devops-flow-hands-on-project:
-        image: rhtsid18dev/complete-devops-flow-hands-on-project:latest
+        build: .
         ports:
             - 80:3000
+volumes:
+    mongoDbData:

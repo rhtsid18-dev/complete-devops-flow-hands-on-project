@@ -1,6 +1,6 @@
-mongoDbData
 .env.sample
 .gitignore
 docker-compose.yaml
 Dockerfile
 README.md
+node_modules
